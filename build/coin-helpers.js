@@ -1,6 +1,6 @@
 "use strict";
 
-var _komodoAssetChains = ['PIRATE', 'CCL', 'KMDICE', 'MGNX', 'DION', 'PTX', 'SUPERNET', 'REVS', 'PANGEA', 'PGT', 'DEX', 'JUMBLR', 'BET', 'CRYPTO', 'COQUI', 'HODL', 'ILN', 'MSHARK', 'BOTS', 'MGW', 'MVP', 'KV', 'CEAL', 'MESH', 'WLC', 'AXO', 'ETOMIC', 'BTCH', 'OOT', 'NINJA', 'GLXT', 'EQL', 'BNTN', 'PRLPAY', 'CHAIN', 'ZILLA', 'DSEC', 'VRSC', 'MGNX', 'CCL', 'PIRATE', 'KOIN', 'DION', 'KMDICE', 'PTX', 'SPLTEST', 'KSB', 'OUR', 'RICK', 'MORTY', 'VOTE2019', 'MTST3', 'RFOX', 'HUSH', 'ZEXO', 'LABS', 'DP', 'WLC21'];
+var _komodoAssetChains = ['PIRATE', 'CCL', 'KMDICE', 'MGNX', 'DION', 'PTX', 'SUPERNET', 'REVS', 'PANGEA', 'PGT', 'DEX', 'JUMBLR', 'BET', 'CRYPTO', 'COQUI', 'HODL', 'ILN', 'MSHARK', 'BOTS', 'MGW', 'MVP', 'KV', 'CEAL', 'MESH', 'WLC', 'AXO', 'ETOMIC', 'BTCH', 'OOT', 'NINJA', 'GLXT', 'EQL', 'BNTN', 'PRLPAY', 'CHAIN', 'ZILLA', 'DSEC', 'VRSC', 'KOIN', 'SPLTEST', 'KSB', 'OUR', 'RICK', 'MORTY', 'VOTE2020', 'MTST3', 'RFOX', 'HUSH', 'ZEXO', 'LABS', 'DP', 'WLC21'];
 
 var _komodoCoins = _komodoAssetChains.concat(['CHIPS', 'KMD', 'KOMODO']);
 

@@ -43,7 +43,7 @@ const _komodoAssetChains = [
   'OUR',
   'RICK',
   'MORTY',
-  'VOTE2019',
+  'VOTE2020',
   'MTST3',
   'RFOX',
   'HUSH',

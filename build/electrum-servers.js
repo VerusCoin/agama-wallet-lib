@@ -140,7 +140,7 @@ var _electrumServers = {
   our: ['51.158.74.137:50002:tcp', 'electrum.komodochainz.info:50042:tcp'],
   rick: ['electrum1.cipig.net:10017:tcp', 'electrum2.cipig.net:10017:tcp', 'electrum3.cipig.net:10017:tcp'],
   morty: ['electrum1.cipig.net:10018:tcp', 'electrum2.cipig.net:10018:tcp', 'electrum3.cipig.net:10018:tcp'],
-  vote2019: ['electrum1.cipig.net:10036:tcp', 'electrum2.cipig.net:10036:tcp', 'electrum3.cipig.net:10036:tcp'],
+  vote2020: ['electrum1.cipig.net:10002:tcp', 'electrum2.cipig.net:10002:tcp', 'electrum3.cipig.net:10002:tcp'],
   zexo: ['electrum1.cipig.net:10035:tcp', 'electrum2.cipig.net:10035:tcp', 'electrum3.cipig.net:10035:tcp'],
   rfox: ['electrum1.cipig.net:10034:tcp', 'electrum2.cipig.net:10034:tcp', 'electrum3.cipig.net:10034:tcp'],
   labs: ['electrum1.cipig.net:10019:tcp', 'electrum2.cipig.net:10019:tcp', 'electrum3.cipig.net:10019:tcp'],
