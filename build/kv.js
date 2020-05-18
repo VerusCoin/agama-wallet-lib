@@ -44,7 +44,8 @@ var KV_HEADER_SIZE = [2, // kv version
 
 var KV_CONTENT_HEADER_SIZE = [3, // content version
 64, // previous txid
-128];
+128 // title
+];
 var KV_MAX_CONTENT_SIZE = 4096;
 
 encode = function encode(data) {
