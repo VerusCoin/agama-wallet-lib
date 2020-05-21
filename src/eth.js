@@ -32,17 +32,17 @@ const ethTransactionsToBtc = (transactions, address, isErc20, decimals) => {
         txindex: transactions[i].transactionIndex,
         src: transactions[i].from,
         address: transactions[i].to,
-        amount: formatEther(transactions[i].value),
+        amount: transactions[i].value != null ? formatEther(transactions[i].value) : null,
         amountWei: transactions[i].value,
-        gas: formatEther(transactions[i].gas),
+        gas: transactions[i].gas != null ? formatEther(transactions[i].gas) : null,
         gasWei: transactions[i].gas,
-        gasPrice: formatEther(transactions[i].gasPrice),
+        gasPrice: transactions[i].gasPrice != null ? formatEther(transactions[i].gasPrice) : null,
         gasPriceWei: transactions[i].gasPrice,
-        cumulativeGasUsed: formatEther(transactions[i].cumulativeGasUsed),
+        cumulativeGasUsed: transactions[i].cumulativeGasUsed != null ? formatEther(transactions[i].cumulativeGasUsed) : null,
         cumulativeGasUsedWei: transactions[i].cumulativeGasUsed,
-        gasUsed: formatEther(transactions[i].gasUsed),
+        gasUsed: transactions[i].gasUsed != null ? formatEther(transactions[i].gasUsed) : null,
         gasUsedWei: transactions[i].gasUsed,
-        fee: formatEther(Number(transactions[i].gasPrice) * Number(transactions[i].gasUsed)),
+        fee: transactions[i].gasPrice != null && transactions[i].gasUsed != null ? formatEther(Number(transactions[i].gasPrice) * Number(transactions[i].gasUsed)) : null,
         feeWei: Number(transactions[i].gasPrice) * Number(transactions[i].gasUsed),
         input: transactions[i].input,
         contractAddress: transactions[i].contractAddress,
@@ -53,8 +53,8 @@ const ethTransactionsToBtc = (transactions, address, isErc20, decimals) => {
         _txObj.tokenName = transactions[i].tokenName;
         _txObj.tokenSymbol = transactions[i].tokenSymbol;
         _txObj.tokenDecimal = transactions[i].tokenDecimal;
-        _txObj.amount = formatEther(parseUnits(transactions[i].value, decimals).toString());
-        _txObj.amountWei = parseUnits(transactions[i].value, decimals).toString();
+        _txObj.amount = transactions[i].value != null ? formatEther(parseUnits(transactions[i].value, decimals).toString()) : null;
+        _txObj.amountWei = transactions[i].value != null ? parseUnits(transactions[i].value, decimals).toString() : null;
       } else {
         _txObj.error = transactions[i].isError;
         _txObj.txreceipt_status = transactions[i].txreceipt_status;
