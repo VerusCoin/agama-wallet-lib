@@ -328,10 +328,12 @@ const seedToPriv = (string, dest) => {
     return dest === 'btc' ? string : btcToEthPriv(string);
   } catch (e) {}
 
-  if (ethUtil.isValidPrivate(ethUtil.toBuffer(string))) {
-    return dest === 'eth' ? string : ethToBtcWif(string);
-  }
-
+  try {
+    if (ethUtil.isValidPrivate(ethUtil.toBuffer(string))) {
+      return dest === 'eth' ? string : ethToBtcWif(string);
+    }
+  } catch (e) {}
+  
   return string;
 };
 
