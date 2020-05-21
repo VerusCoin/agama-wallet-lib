@@ -261,10 +261,12 @@ const pubkeyToAddress = (pubkey, network) => {
 
 // priv can be a valid priv key or a seed
 const etherKeys = (priv, iguana) => {
-  if (ethUtil.isValidPrivate(ethUtil.toBuffer(priv))) {
-    return new ethersWallet.Wallet(priv);
-  }
-
+  try {
+    if (ethUtil.isValidPrivate(ethUtil.toBuffer(priv))) {
+      return new ethersWallet.Wallet(priv);
+    }  
+  } catch (e) {}
+  
   const hash = sha256.create().update(priv);
   const bytes = hash.array();
 
@@ -421,9 +423,11 @@ const pubToPub = (address, networkSrc, networkDest) => {
 const isPrivKey = (str) => {
   let isPrivKey = false;
 
-  if (ethUtil.isValidPrivate(ethUtil.toBuffer(str))) {
-    isPrivKey = true;
-  } else {
+  try {
+    if (ethUtil.isValidPrivate(ethUtil.toBuffer(str))) {
+      isPrivKey = true;
+    }
+  } catch (e) {
     try {
       bs58check.decode(str);
       isPrivKey = true;
