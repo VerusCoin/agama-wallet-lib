@@ -90,7 +90,10 @@ var _electrumServers = {
   ccl: ['electrum1.cipig.net:10029:tcp', 'electrum2.cipig.net:10029:tcp', 'electrum3.cipig.net:10029:tcp'],
   vrsc: ['el0.veruscoin.io:17485:tcp', 'el1.veruscoin.io:17485:tcp', 'el2.veruscoin.io:17485:tcp'],
   polis: ['electrum1.cipig.net:10075:tcp', 'electrum2.cipig.net:10075:tcp', 'electrum3.cipig.net:10075:tcp'],
-  xzc: ['electrumx01.zcoin.io:50001:tcp', 'electrumx02.zcoin.io:50001:tcp', '45.63.92.224:50001:tcp', '45.77.67.235:50001:tcp'],
+  xzc: ['electrumx.zcoin.io:50001:tcp',
+  'electrumx01.zcoin.io:50001:tcp',
+  'electrumx02.zcoin.io:50001:tcp',
+  'electrumx03.zcoin.io:50001:tcp'],
   // unverified to work
   // src: CryptoWallet.si
   arco: ['node1.cryptowallet.si:5095:tcp', 'node2.cryptowallet.si:5095:tcp', 'electrum1.aquariuscoin.com:5095:tcp', 'electrum2.aquariuscoin.com:5095:tcp', 'electrum3.aquariuscoin.com:5095:tcp'],
