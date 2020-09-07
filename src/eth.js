@@ -1,6 +1,7 @@
 const {
   formatEther,
   parseUnits,
+  formatUnits
 } = require('ethers/utils/units');
 const standardABI = require('./erc20-standard-abi');
 const erc20ContractID = require('./eth-erc20-contract-id');
@@ -53,8 +54,8 @@ const ethTransactionsToBtc = (transactions, address, isErc20, decimals) => {
         _txObj.tokenName = transactions[i].tokenName;
         _txObj.tokenSymbol = transactions[i].tokenSymbol;
         _txObj.tokenDecimal = transactions[i].tokenDecimal;
-        _txObj.amount = transactions[i].value != null ? formatEther(parseUnits(transactions[i].value, decimals).toString()) : null;
-        _txObj.amountWei = transactions[i].value != null ? parseUnits(transactions[i].value, decimals).toString() : null;
+        _txObj.amount = transactions[i].value != null ? formatUnits(transactions[i].value, decimals) : null;
+        _txObj.amountWei = transactions[i].value != null ? transactions[i].value : null;
       } else {
         _txObj.error = transactions[i].isError;
         _txObj.txreceipt_status = transactions[i].txreceipt_status;
