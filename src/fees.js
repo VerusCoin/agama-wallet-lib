@@ -50,7 +50,6 @@ const fees = {
   rick: KMD_STD_FEE,
   morty: KMD_STD_FEE,
   vote2019: KMD_STD_FEE,
-  rfox: KMD_STD_FEE,
   hush: KMD_STD_FEE,
   zexo: KMD_STD_FEE,
   labs: KMD_STD_FEE,

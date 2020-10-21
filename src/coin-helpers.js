@@ -118,7 +118,6 @@ const explorerList = {
   MORTY: 'https://morty.kmd.dev',
   VOTE2019: 'https://vote2019.world',
   MTST3:  'http://explorer.marmara.io',
-  RFOX: 'https://rfox.kmdexplorer.io',
   ZEXO: 'http://zexo.explorer.dexstats.info',
   LABS: 'http://labs.explorer.dexstats.info',
   DP: 'https://dp.explorer.komodo.top',
@@ -126,6 +125,7 @@ const explorerList = {
   // non-kmd coins
   QTUM: 'https://explorer.qtum.org',
   DNR: 'http://denarius.name',
+  RFOX: 'https://etherscan.io/tx/',
   LTC: 'https://live.blockcypher.com/ltc/tx/',
   DOGE: 'https://live.blockcypher.com/doge/tx/',
   DASH: 'https://live.blockcypher.com/dash/tx/',

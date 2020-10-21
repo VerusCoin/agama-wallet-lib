@@ -145,7 +145,6 @@ var _electrumServers = {
   morty: ['electrum1.cipig.net:10018:tcp', 'electrum2.cipig.net:10018:tcp', 'electrum3.cipig.net:10018:tcp'],
   vote2020: ['electrum1.cipig.net:10002:tcp', 'electrum2.cipig.net:10002:tcp', 'electrum3.cipig.net:10002:tcp'],
   zexo: ['electrum1.cipig.net:10035:tcp', 'electrum2.cipig.net:10035:tcp', 'electrum3.cipig.net:10035:tcp'],
-  rfox: ['electrum1.cipig.net:10034:tcp', 'electrum2.cipig.net:10034:tcp', 'electrum3.cipig.net:10034:tcp'],
   labs: ['electrum1.cipig.net:10019:tcp', 'electrum2.cipig.net:10019:tcp', 'electrum3.cipig.net:10019:tcp'],
   dp: ['dp.electrum.komodo.top:50001:tcp', 'dp.electrum2.komodo.top:50001:tcp'],
   wlc21: ['electrum1.cipig.net:10014:tcp', 'electrum2.cipig.net:10014:tcp', 'electrum3.cipig.net:10014:tcp']

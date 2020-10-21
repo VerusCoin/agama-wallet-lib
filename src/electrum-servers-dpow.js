@@ -38,7 +38,6 @@ const dpowCoins = [
   'KMDICE',
   'OUR',
   'ILN',
-  'RFOX',
   'MORTY',
   'RICK',
   'SEC',

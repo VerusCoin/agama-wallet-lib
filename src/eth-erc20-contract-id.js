@@ -169,6 +169,7 @@ const erc20ContractId = {
   DEC8: '0x3ab100442484dc2414aa75b2952a0a6f03f8abfd',
   ZIL: '0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27',
   TUSD: '0x0000000000085d4780B73119b644AE5ecd22b376',
+  RFOX: '0xa1d6Df714F91DeBF4e0802A542E13067f31b8262'
 };
 
 module.exports = erc20ContractId;
