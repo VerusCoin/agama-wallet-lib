@@ -84,7 +84,7 @@
     "iocane": "^1.0.0",
     "js-sha256": "^0.7.1",
     "nodejs-aes256": "^1.0.1",
-    "npm": "^6.14.7",
+    "npm": "^7.0.14",
     "passwd-strength": "git+https://github.com/pbca26/passwd-strength",
     "sha256": "^0.2.0",
     "tx-decoder": "git+https://github.com/pbca26/tx-decoder",
