@@ -264,9 +264,11 @@ var pubkeyToAddress = function pubkeyToAddress(pubkey, network) {
 
 
 var etherKeys = function etherKeys(priv, iguana) {
-  if (ethUtil.isValidPrivate(ethUtil.toBuffer(priv))) {
-    return new ethersWallet.Wallet(priv);
-  }
+  try {
+    if (ethUtil.isValidPrivate(ethUtil.toBuffer(priv))) {
+      return new ethersWallet.Wallet(priv);
+    }
+  } catch (e) {}
 
   var hash = sha256.create().update(priv);
   var bytes = hash.array();
@@ -330,9 +332,11 @@ var seedToPriv = function seedToPriv(string, dest) {
     return dest === 'btc' ? string : btcToEthPriv(string);
   } catch (e) {}
 
-  if (ethUtil.isValidPrivate(ethUtil.toBuffer(string))) {
-    return dest === 'eth' ? string : ethToBtcWif(string);
-  }
+  try {
+    if (ethUtil.isValidPrivate(ethUtil.toBuffer(string))) {
+      return dest === 'eth' ? string : ethToBtcWif(string);
+    }
+  } catch (e) {}
 
   return string;
 }; // pubKeys - array containing pub key hash hex
@@ -415,9 +419,11 @@ var pubToPub = function pubToPub(address, networkSrc, networkDest) {
 var isPrivKey = function isPrivKey(str) {
   var isPrivKey = false;
 
-  if (ethUtil.isValidPrivate(ethUtil.toBuffer(str))) {
-    isPrivKey = true;
-  } else {
+  try {
+    if (ethUtil.isValidPrivate(ethUtil.toBuffer(str))) {
+      isPrivKey = true;
+    }
+  } catch (e) {
     try {
       bs58check.decode(str);
       isPrivKey = true;
