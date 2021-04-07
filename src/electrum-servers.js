@@ -515,7 +515,7 @@ let _electrumServers = {
     'electrum2.cipig.net:10018:tcp',
     'electrum3.cipig.net:10018:tcp',
   ],
-  vote2020: [
+  vote2021: [
     'electrum1.cipig.net:10002:tcp',
     'electrum2.cipig.net:10002:tcp',
     'electrum3.cipig.net:10002:tcp',
