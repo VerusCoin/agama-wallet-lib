@@ -88,7 +88,7 @@ var _electrumServers = {
   ftc: ['electrumx-ch-1.feathercoin.ch:50001:tcp', 'electrumx-de-2.feathercoin.ch:50001:tcp', 'electrumx-gb-1.feathercoin.network:50001:tcp', 'electrumx-gb-2.feathercoin.network:50001:tcp'],
   mnx: ['electrum1.cipig.net:10079:tcp', 'electrum2.cipig.net:10079:tcp', 'electrum3.cipig.net:10079:tcp'],
   ccl: ['electrum1.cipig.net:10029:tcp', 'electrum2.cipig.net:10029:tcp', 'electrum3.cipig.net:10029:tcp'],
-  vrsc: ['el0.veruscoin.io:17485:tcp', 'el1.veruscoin.io:17485:tcp', 'el2.veruscoin.io:17485:tcp'],
+  vrsc: ['el0.verus.io:17486:ssl', 'el1.verus.io:17486:ssl', 'el2.verus.io:17486:ssl', 'el3.verus.io:17486:ssl'],
   polis: ['electrum1.cipig.net:10075:tcp', 'electrum2.cipig.net:10075:tcp', 'electrum3.cipig.net:10075:tcp'],
   xzc: ['electrumx.zcoin.io:50001:tcp', 'electrumx01.zcoin.io:50001:tcp', 'electrumx02.zcoin.io:50001:tcp', 'electrumx03.zcoin.io:50001:tcp'],
   // unverified to work
@@ -140,7 +140,7 @@ var _electrumServers = {
   our: ['51.158.74.137:50002:tcp', 'electrum.komodochainz.info:50042:tcp'],
   rick: ['electrum1.cipig.net:10017:tcp', 'electrum2.cipig.net:10017:tcp', 'electrum3.cipig.net:10017:tcp'],
   morty: ['electrum1.cipig.net:10018:tcp', 'electrum2.cipig.net:10018:tcp', 'electrum3.cipig.net:10018:tcp'],
-  vote2020: ['electrum1.cipig.net:10002:tcp', 'electrum2.cipig.net:10002:tcp', 'electrum3.cipig.net:10002:tcp'],
+  vote2021: ['electrum1.cipig.net:10002:tcp', 'electrum2.cipig.net:10002:tcp', 'electrum3.cipig.net:10002:tcp'],
   zexo: ['electrum1.cipig.net:10035:tcp', 'electrum2.cipig.net:10035:tcp', 'electrum3.cipig.net:10035:tcp'],
   labs: ['electrum1.cipig.net:10019:tcp', 'electrum2.cipig.net:10019:tcp', 'electrum3.cipig.net:10019:tcp'],
   dp: ['dp.electrum.komodo.top:50001:tcp', 'dp.electrum2.komodo.top:50001:tcp'],
@@ -159,7 +159,7 @@ for (var key in _electrumServers) {
   }
 }
 
-var proxyServersHttps = ['el0.veruscoin.io', 'el1.veruscoin.io', 'el2.veruscoin.io'];
+var proxyServersHttps = ['el0.verus.io', 'el1.verus.io', 'el2.verus.io', 'el3.verus.io'];
 var proxyServersHttp = ['94.130.225.86:80', '94.130.225.86:80'];
 module.exports = {
   proxyServersHttps: proxyServersHttps,

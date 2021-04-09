@@ -1,6 +1,6 @@
 "use strict";
 
-var _komodoAssetChains = ['PIRATE', 'CCL', 'KMDICE', 'MGNX', 'DION', 'PTX', 'SUPERNET', 'REVS', 'PANGEA', 'PGT', 'DEX', 'JUMBLR', 'BET', 'CRYPTO', 'COQUI', 'HODL', 'ILN', 'MSHARK', 'BOTS', 'MGW', 'MVP', 'KV', 'CEAL', 'MESH', 'WLC', 'AXO', 'ETOMIC', 'BTCH', 'OOT', 'NINJA', 'GLXT', 'EQL', 'BNTN', 'PRLPAY', 'CHAIN', 'ZILLA', 'DSEC', 'VRSC', 'KOIN', 'SPLTEST', 'KSB', 'OUR', 'RICK', 'MORTY', 'VOTE2020', 'MTST3', 'RFOX', 'HUSH', 'ZEXO', 'LABS', 'DP', 'WLC21'];
+var _komodoAssetChains = ['PIRATE', 'CCL', 'KMDICE', 'MGNX', 'DION', 'PTX', 'SUPERNET', 'REVS', 'PANGEA', 'PGT', 'DEX', 'JUMBLR', 'BET', 'CRYPTO', 'COQUI', 'HODL', 'ILN', 'MSHARK', 'BOTS', 'MGW', 'MVP', 'KV', 'CEAL', 'MESH', 'WLC', 'AXO', 'ETOMIC', 'BTCH', 'OOT', 'NINJA', 'GLXT', 'EQL', 'BNTN', 'PRLPAY', 'CHAIN', 'ZILLA', 'DSEC', 'VRSC', 'KOIN', 'SPLTEST', 'KSB', 'OUR', 'RICK', 'MORTY', 'VOTE2020', 'VOTE2021', 'MTST3', 'RFOX', 'HUSH', 'ZEXO', 'LABS', 'DP', 'WLC21'];
 
 var _komodoCoins = _komodoAssetChains.concat(['CHIPS', 'KMD', 'KOMODO']);
 
@@ -57,6 +57,7 @@ var explorerList = {
   NINJA: 'https://ninja.kmdexplorer.io',
   DSEC: 'https://dsec.kmdexplorer.io',
   VRSC: 'https://explorer.verus.io',
+  VOTE2021: 'https://vote.explorer.dexstats.info/',
   VRSCTEST: "https://testex.verus.io",
   KMDICE: 'http://kmdice.explorer.dexstats.info',
   KSB: 'http://ksb.explorer.dexstats.info',

@@ -319,9 +319,10 @@ let _electrumServers = {
     'electrum3.cipig.net:10029:tcp',
   ],
   vrsc: [
-    'el0.veruscoin.io:17485:tcp',
-    'el1.veruscoin.io:17485:tcp',
-    'el2.veruscoin.io:17485:tcp',
+    'el0.verus.io:17486:ssl',
+    'el1.verus.io:17486:ssl',
+    'el2.verus.io:17486:ssl',
+    'el3.verus.io:17486:ssl',
   ],
   polis: [
     'electrum1.cipig.net:10075:tcp',
@@ -554,7 +555,7 @@ for (let key in _electrumServers) {
   }
 }
 
-const proxyServersHttps = ['el0.veruscoin.io', 'el1.veruscoin.io', 'el2.veruscoin.io'];
+const proxyServersHttps = ['el0.verus.io', 'el1.verus.io', 'el2.verus.io','el3.verus.io'];
 const proxyServersHttp = ['94.130.225.86:80', '94.130.225.86:80'];
 
 module.exports = {
